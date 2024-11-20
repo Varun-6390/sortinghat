@@ -1,0 +1,83 @@
+@font-face {
+    font-family: wizard;
+    src: url(WizardWorldSimplified.ttf);
+}
+*{
+    background-color: #00001b;
+    cursor: url('wand2.png'),auto;
+    
+}
+.greet{
+    font-family: wizard;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    color:wheat;
+    
+}
+.logo img {
+    width: 150px;
+}
+.logo{
+    color: wheat;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family:wizard;
+    padding: 7px;
+    margin: auto;
+}
+.container{
+    border: 2px solid;
+    box-sizing: border-box;
+    width: 300px;
+    height: 350px;
+    font-family:wizard;
+    color: wheat;
+}
+#naam{
+    padding: 8px;
+    margin-top: 35px;
+    width:210px;
+    color: white;
+    font-family: wizard;
+    border: 0.5px solid gray;
+    box-shadow: 6px 6px 16px rgb(65, 63, 63);
+}
+.btn-check{
+    padding: 8px;
+    margin: 55px;
+    color: white;
+    background-color: #5758ff;
+    border-radius: 8px;
+    border: none;
+    font-family:sans-serif;
+    font-weight: bold;
+}
+.btn-check:hover{
+    background-color:blue;
+}
+.hat{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hat img{
+    height: 200px;
+    margin: 10px;
+    animation: float 3s ease-in-out infinite;
+}
+#wait {
+    color: white;
+    display: none;
+}
+@keyframes float { 0% { transform: translateY(0); } 50% { transform: translateY(-20px); } 100% { transform: translateY(0); } }
+
+@media (max-width: 480px) {
+    .logo img{
+        width: 80px;
+    }
+    .logo{
+        font-size: smaller;
+    }
+}
